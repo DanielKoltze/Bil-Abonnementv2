@@ -21,7 +21,6 @@ public class DamageRapportDemoTest {
     private static String baseUrl;
 
 
-
     @BeforeAll()
     public static void setupAndPing() {
         WebDriverManager.chromedriver().setup();
@@ -32,7 +31,7 @@ public class DamageRapportDemoTest {
         testRegistrationNumber = "demo";
 
 
-        baseUrl = "https://bil-abonnement-a.herokuapp.com";
+        baseUrl = "https://bil-abonnement-a.herokuapp.com/";
 
     }
 
@@ -62,10 +61,34 @@ public class DamageRapportDemoTest {
         WebElement createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
         WebElement damageReportDescription = driver.findElement(By.id("description"));
 
-        for (int i = 0; i < 13; i++) {
-            damageReportDescription.sendKeys("Parkeringsskade " + i+1);
-            createDamageReportButton.click();
-        }
+        damageReportDescription.sendKeys("Parkeringsskade");
+        createDamageReportButton.click();
+
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Parkeringsskade1");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Parkeringsskade2");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Parkeringsskade3");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Parkeringsskade4");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Parkeringsskade5");
+        createDamageReportButton.click();
 
     }
 
