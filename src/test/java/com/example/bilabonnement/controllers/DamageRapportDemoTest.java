@@ -31,7 +31,7 @@ public class DamageRapportDemoTest {
         testRegistrationNumber = "demo";
 
 
-        baseUrl = "https://bil-abonnement-a.herokuapp.com/";
+        baseUrl = "https://bil-abonnement-projekt.herokuapp.com/";
 
     }
 
@@ -67,27 +67,57 @@ public class DamageRapportDemoTest {
 
         createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
         damageReportDescription = driver.findElement(By.id("description"));
-        damageReportDescription.sendKeys("Parkeringsskade1");
+        damageReportDescription.sendKeys("Torpederet");
         createDamageReportButton.click();
 
         createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
         damageReportDescription = driver.findElement(By.id("description"));
-        damageReportDescription.sendKeys("Parkeringsskade2");
+        damageReportDescription.sendKeys("Frontalt sammenstød");
         createDamageReportButton.click();
 
         createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
         damageReportDescription = driver.findElement(By.id("description"));
-        damageReportDescription.sendKeys("Parkeringsskade3");
+        damageReportDescription.sendKeys("Bakket ind i træ");
         createDamageReportButton.click();
 
         createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
         damageReportDescription = driver.findElement(By.id("description"));
-        damageReportDescription.sendKeys("Parkeringsskade4");
+        damageReportDescription.sendKeys("Parkeringsskade");
         createDamageReportButton.click();
 
         createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
         damageReportDescription = driver.findElement(By.id("description"));
-        damageReportDescription.sendKeys("Parkeringsskade5");
+        damageReportDescription.sendKeys("Kørt ind i træ");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Sammenstød");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Kørt ind i væg");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Frontalt sammenstød");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Sammenstød");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Kørt ind i træ");
+        createDamageReportButton.click();
+
+        createDamageReportButton = driver.findElement(By.id("create-damage-report-button"));
+        damageReportDescription = driver.findElement(By.id("description"));
+        damageReportDescription.sendKeys("Parkeringsskade");
         createDamageReportButton.click();
 
     }
